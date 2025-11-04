@@ -218,16 +218,24 @@
     <section class="form-section">
         <h2>Inscription à la loterie</h2>
         <p style="max-width:600px;text-align:center;">Remplissez le formulaire ci‑dessous pour participer à la loterie. Chaque participation coûte 2 € et vous donne une chance de gagner ce voyage exceptionnel pour deux personnes. Le tirage au sort aura lieu le 24 décembre 2025 et les gagnants seront contactés par e‑mail.</p>
-        <form onsubmit="alert('Merci pour votre participation !\nCette démo n\'effectue pas de paiement réel.'); return false;">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-            <label for="email">Adresse e‑mail</label>
-            <input type="email" id="email" name="email" placeholder="Votre e‑mail" required>
-            <label for="tickets">Nombre de tickets</label>
-            <input type="number" id="tickets" name="tickets" min="1" value="1" required>
-            <a href="https://buy.stripe.com/8x26oG1137NgcZ40PYeAg00" target="_blank" id="stripeButton" style="display:inline-block; background-color:#0070f3; color:white; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Participer – 2 €</a>
+      <form>
+  <label for="nom">Nom complet</label>
+  <input type="text" id="nom" name="nom" required>
 
-        </form>
+  <label for="email">Adresse e-mail</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="tickets">Nombre de tickets</label>
+  <input type="number" id="tickets" name="tickets" min="1" value="1" required>
+</form>
+
+<div style="text-align:center; margin-top:20px;">
+  <a href="https://buy.stripe.com/8x26oG1137NgcZ40PYeAg00" target="_blank"
+     style="display:inline-block; background:#111; color:#fff; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:600;">
+     🎟️ Participer – 2 €
+  </a>
+</div>
+
     </section>
 <!-- Bouton de paiement Stripe -->
 <div style="text-align:center; margin-top:50px;">
